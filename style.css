@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: #000;
+    outline: none;
+}
+body{
+    background-color: #ccc;
+}
+p{
+    text-align: center;
+    font-size: 1.4em;
+    margin: 20px 0 30px;
+    font-weight: 700;
+}
+.container{
+    background-color: #fff;
+    padding: 30px 40px;
+    width: 40vw;
+    min-width: 450px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px #000;
+}
+#newtask{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    background: linear-gradient(135deg,rgba(0,0,0,.9),rgba(0,0,0,.9),rgba(0, 0, 0, 0.522),rgba(0,0,0,.9));    
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px #000;
+}
+#newtask input{
+    color: #fff;
+    width: 75%;
+    height: 45px;
+    background-color: transparent;
+    position: relative;
+    border: none;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom: 2px solid skyblue;
+    border-right: 2px solid skyblue;
+    padding: 12px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+#newtask input::placeholder{
+    color: #919191;
+}
+#newtask button{
+    width: 20%;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid skyblue;
+    border-left: 2px solid skyblue;
+    border-radius: 9px;
+    font-weight: 200;
+    background-color: transparent;
+}
+#newtask button h2{
+    color: #fff;
+}
+#newtask button:hover{
+    background-color: skyblue;
+}
+#tasks{
+    box-shadow: 0 0 20px #000 inset;
+    border: none;
+    padding: 30px 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+
+/* STYLING THE EMPTY HTML TASK */
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    box-shadow: 0 10px 20px #000 inset;
+    background: linear-gradient(-135deg,rgba(0,0,0,.9),rgba(0,0,0,.9),rgba(0, 0, 0, 0.522),rgba(0,0,0,.9));    
+    border-radius: 5px;
+    height: 50%;
+    margin-top: 10px;
+}
+.task:nth-child(even){
+    background: linear-gradient(135deg,rgba(0,0,0,.9),rgba(0,0,0,.9),rgba(0, 0, 0, 0.522),rgba(0,0,0,.9));    
+}
+.task span{
+    color: #fff;
+    text-transform: capitalize;
+}
+.task button{
+    font-family: 'Poppins',sans-serif;
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* ADDING A LINE-THROUGH FOR THE COMPLITED */
+
+.completed{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+
+/* STYLING THE ALERT */
+
+.swal-modal{
+    border-radius: 30px;
+}
+.swal-modal button{
+    background-color: #717171;
+    box-shadow: 0 0 20px #000;
+}
